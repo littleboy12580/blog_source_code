@@ -159,7 +159,7 @@ def router(url):
             close_db()
         return wrapper
     return query_data
-@router('/user')          # 首先调用了router函数， 输出 router invoke url /user， 进行@装饰，输出 'query_data invoke url', url
+@router('/user')          # 首先调用了router函数， 输出 router invoke url /user， 进行@装饰，输出 'query_data invoke url', /user
 def query_user(count):
     print 'query some user limit  {count}'.format(count=count)
 query_user(count=100)   # connect db
