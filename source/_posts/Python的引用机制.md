@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "通过request获取用户信息"
+title: "Python引用机制"
 date: 2017-06-09 19:32
 comments: true
 tags:
