@@ -7,7 +7,10 @@ tags:
 	- Flask
 	- 技术
 ---
-
+最近开始看Flask的源码，过程中对以前半知半解的概念有了清晰的认知。
+如今再看一些Flask的应用源码，也算是可以理解其中的一些代码原理了。
+所以推荐大家都去看看那些比较著名的框架的源码，真的可以收获很多
+下面结合源码讲讲Flask的上下文，希望对看到这篇博客的人理解Flask上下文能有所帮助
 <!-- more -->
 ## 什么是上下文
 Flask的官方文档里并没有对上下文的概念做出一个直观地解释；所以在网上找了很多解释，最后还是觉得知乎的一个回答解释的最直观：
@@ -554,3 +557,8 @@ push 操作就是把该请求的ApplicationContext和RequestContext有关的信�
 每次有请求过来的时候，flask 会先创建当前线程或者进程需要处理的两个重要上下文对象，把它们保存到隔离的栈里面，
 这样视图函数进行处理的时候就能直接从栈上获取这些信息
 
+
+## 参考资料
+* [flask 源码解析：上下文](http://cizixs.com/2017/01/13/flask-insight-context)
+* [Understanding Contexts in Flask](http://kronosapiens.github.io/blog/2014/08/14/understanding-contexts-in-flask.html)
+* [Flask 上下文理解](https://jin-yang.github.io/post/flask-context.html)
